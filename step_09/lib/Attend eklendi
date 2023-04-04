@@ -16,6 +16,8 @@ import 'yes_no_selection.dart';
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
+  get onPressed => null;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -74,6 +76,11 @@ class HomePage extends StatelessWidget {
                         appState.addMessageToGuestBook(message),
                     messages: appState.guestBookMessages,
                   ),
+                  Text("Attent"),
+                  IconButton(
+                      onPressed: onPressed,
+                      icon: Icon(Icons.square)),
+
                 ],
               ],
             ),
